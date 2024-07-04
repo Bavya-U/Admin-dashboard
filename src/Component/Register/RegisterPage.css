@@ -1,0 +1,78 @@
+/* styles.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card-body img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .reg-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reg-form .form-group {
+    margin-bottom: 1rem;
+  }
+  .sign-title{
+    color: rgb(0,223,192);
+    font-size: 30px;
+  }
+  
+  .reg-form .login-btn,
+  .reg-form .Register-btn {
+    font-size: 14px;
+  }
+  
+  .reg-form .login-btn {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .reg-form .Register-btn {
+    background-color: rgb(0,223,192);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .img-div{
+    background-image: url(../../Assert/sign-up.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+  }
+.error{
+  color: red;
+  padding: 0px;
+  margin: 0px;
+}
+  
