@@ -47,7 +47,6 @@ const RegisterForm = () => {
             <div className="card-body py-md-4">
               <div className="row">
                 <div className="col-md-6 d-none d-md-block img-div">
-                  {/* <img src="/Assert/login-image.jpg" alt="Sign up" className="img-fluid img-div" /> */}
                 </div>
                 <div className="col-md-6">
                   <h2 className="card-title sign-title text-center fw-bold pb-1">Register Employee</h2>

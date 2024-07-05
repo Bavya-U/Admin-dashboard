@@ -1,10 +1,7 @@
-/* Sidebar */
 #sidenav-1 {
     width: 240px;
-    background-color: #212529; /* Dark background color */
+    background-color: #212529; 
     color: white;
-    height: 100vh;
-    position: fixed;
   }
   
   .sidenav a {
@@ -12,7 +9,7 @@
   }
   
   .sidenav a:hover {
-    background-color: #343a40; /* Slightly lighter dark color on hover */
+    background-color: #343a40;
   }
   
   .sidenav .sidenav-menu {
@@ -35,10 +32,12 @@
     margin-right: 10px;
   }
   
-  /* Top Navbar */
+  
   #main-navbar {
-    background-color: #343a40; /* Dark background color */
+    background-color: #343a40; 
     color: white;
+    margin-left: 16%;
+    width: 84%;
   }
   
   #main-navbar .navbar-brand img {
@@ -46,15 +45,15 @@
   }
   
   #main-navbar .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: gray;
   }
   
   #main-navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #adb5bd; /* Slightly lighter color on hover */
+    color: black; 
   }
   
   #main-navbar .navbar-nav .dropdown-menu {
-    background-color: #343a40; /* Dark background for dropdown */
+    background-color: #343a40; 
     color: white;
   }
   
@@ -63,23 +62,23 @@
   }
   
   #main-navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #495057; /* Slightly lighter dark color on hover */
+    background-color: #495057; 
   }
   
   .input-group .form-control {
-    background-color: #495057; /* Dark input background */
+    background-color: #495057; 
     border: none;
     color: white;
   }
   
   .input-group .input-group-text {
-    background-color: #495057; /* Match input background */
+    background-color: #495057; 
     border: none;
     color: white;
   }
   
   .input-group .form-control::placeholder {
-    color: #adb5bd; /* Light placeholder text */
+    color: #adb5bd; 
   }
   
   .badge-notification {
