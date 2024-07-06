@@ -40,16 +40,16 @@ const RegisterForm = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container reg-main">
       <div className="row justify-content-center col-md-12">
         <div className="col-md-8">
-          <div className="card border-0 shadow p-3">
-            <div className="card-body py-md-4">
+          <div className=" card reg-card border-0 shadow p-3">
+            <div className=" card-body reg-card-body py-md-4">
               <div className="row">
                 <div className="col-md-6 d-none d-md-block img-div">
                 </div>
                 <div className="col-md-6">
-                  <h2 className="card-title sign-title text-center fw-bold pb-1">Register Employee</h2>
+                  <h2 className=" card-title reg-card-title sign-title text-center fw-bold pb-1">Register Employee</h2>
                   <form onSubmit={formik.handleSubmit} className='reg-form'>
                     <TextInput
                       id="name"

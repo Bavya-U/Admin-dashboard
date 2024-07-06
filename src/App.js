@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterForm from "./Component/Register/RegisterPage";
 import Navbar from "./Pages/Navbar/Navbar";
 import LoginForm from "./Component/Login/LoginPage";
+import Sidebar from "./Pages/Sidebar/Sidebar";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
         <Route path="/" element={<RegisterForm />} />
         <Route path="/DashBoard" element={<Navbar />} />
         <Route path="/authlogin" element={<LoginForm />} />
+        <Route path="/sidebar" element={<Sidebar />} />
+
       </Routes>
     </Router>
   );

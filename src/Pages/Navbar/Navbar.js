@@ -8,9 +8,9 @@ function Navbar() {
   return (
     <div className='d-flex'>
       
-        <div className='col-md-3 col-lg-2'>
+        {/* <div className='col-md-3 col-lg-2'> */}
         <Sidebar/>
-        </div>
+        {/* </div> */}
         <nav id="main-navbar" className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow col-md-9 col-lg-10">
           <div className="container-fluid">
             <button data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1" data-mdb-ripple-color="primary" className="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1" aria-haspopup="true">

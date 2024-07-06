@@ -1,13 +1,13 @@
 /* styles.css */
 
-.container {
+.reg-main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
   
-  .card {
+  .reg-card {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -15,19 +15,19 @@
     overflow: hidden;
   }
   
-  .card-body {
+  .reg-card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
   }
   
-  .card-body img {
+  .reg-card-body img {
     max-width: 100%;
     height: auto;
   }
   
-  .card-title {
+  .reg-card-title {
     font-size: 24px;
     margin-bottom: 1rem;
   }
