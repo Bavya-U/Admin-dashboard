@@ -1,0 +1,24 @@
+.employee-table-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    
+  }
+  @media (max-width: 899.95px){
+  .tss-1vd39vz-MUIDataTableBodyCell-stackedCommon {
+    display: block !important;
+}
+.tss-1ej321f-MUIDataTableBodyCell-cellHide {
+    display: none !important;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+    display: none !important;
+    }
+}
+
+.css-1ygcj2i-MuiTableCell-root {
+    text-align: center !important;
+}
+.css-1ex1afd-MuiTableCell-root {
+    text-align: center !important;
+}

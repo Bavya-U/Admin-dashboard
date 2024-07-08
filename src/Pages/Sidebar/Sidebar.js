@@ -16,9 +16,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { sidebarDataFirst, sidebarDataLast } from "./SideNav";
 
 const Sidebar = ({ children }) => {
-  
   const [isNavbarActive, setIsNavbarActive] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleNavbarToggle = () => {
     setIsNavbarActive(!isNavbarActive);
@@ -45,6 +45,9 @@ const Sidebar = ({ children }) => {
   };
 
   const isMenuActive = (menu) => activeMenu === menu;
+  const filteredSidebarDataFirst = sidebarDataFirst().filter((item) =>
+    item.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div  className={`navbars row-fluid d-flex col-md-12 sidebar ${
@@ -100,6 +103,8 @@ const Sidebar = ({ children }) => {
             className="navbar-search text-white border-0 mt-2"
             id="search"
             onClick={handleSearchClick}
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             
           />
           <span className="icon-search" id="icon-search" onClick={handleSearchClick}><FontAwesomeIcon icon={faSearch} /></span>
@@ -108,7 +113,7 @@ const Sidebar = ({ children }) => {
           </i> */}
 
           <ul className="menu-list p-0">
-            {sidebarDataFirst().map((item, index) => (
+          {filteredSidebarDataFirst.map((item, index) => (
               <li key={index} className="menu-item">
                 <div className="menu-link mt-3">
                   <FontAwesomeIcon
